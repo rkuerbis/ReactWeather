@@ -1,1 +1,7 @@
-git node_modules/
+node_modules/
+
+.DS_Store
+.ftpquota
+example-listenmessage.js
+
+public/npm-debug.log
