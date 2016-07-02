@@ -11,6 +11,9 @@ var Weather = React.createClass({
       isLoading: false
     }
   },
+
+
+
   handleSearch: function (location) {
     var that = this;
 
@@ -60,8 +63,13 @@ componentWillReceiveProps: function (newProps) {
   }
 },
 
+
+// Initial Location value
+
+
+
   render: function () {
-    var {isLoading, temp, location, errorMessage} = this.state;
+    var {isLoading, temp, location, errorMessage, initiallocation} = this.state;
 
     function renderMessage () {
 
@@ -80,9 +88,13 @@ componentWillReceiveProps: function (newProps) {
       }
     }
 
+
+
+
     return (
       <div>
         <h1 className="text-center page-title">Get Weather</h1>
+
         <WeatherForm onSearch={this.handleSearch}/>
         {renderMessage()}
         {renderError()}

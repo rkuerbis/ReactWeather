@@ -14,7 +14,7 @@ var Nav = React.createClass({
       }
 
 
-      alert(location);
+//      alert(location);
   },
   render: function () {
     return (
